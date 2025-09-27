@@ -1,17 +1,20 @@
 import { Button } from './components/atoms/Button/Button'
+import { RickMorty } from './components/pages/RickMorty/RickMorty'
 
 function App() {
 
-  const handleOnclick = () => {
+  /* const handleOnclick = () => {
     console.log("first button")
   }
   const handleOnclickTwo = () => {
     console.log("two button")
-  }
+  } */
 
   return (
     <div>
-      <Button
+
+      <RickMorty/>
+      {/* <Button
         text={"Enviar"}
         onClick={handleOnclick}
         color='#fffc'
@@ -29,7 +32,7 @@ function App() {
         fontSize="19px"
         bgColor='red'
       />
-
+ */}
     </div>
 
   )
