@@ -1,0 +1,7 @@
+.btnContainer {
+  color: var(--color, yellow);
+  font-size: var(--fontSize, 50px);
+  background: var(--bgColor, #504f4f);
+  width: var(--width, 100px);
+  height: var(--height, 80px);
+}
