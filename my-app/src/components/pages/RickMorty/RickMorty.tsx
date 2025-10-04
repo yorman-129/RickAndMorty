@@ -4,12 +4,12 @@ import style from "./RickMorty.module.css";
 import { modelCharacter } from "./RickMorty.model";
 
 export const RickMorty = () => {
-  const [characters, setCharacters] = useState<any[]>([]);
+  const [characters, setCharacters] = useState<modelCharacter[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await getCharacter();
-      setCharacters(data);
+      setCharacters(data || []);
       console.log(data);
     };
     fetchData();
